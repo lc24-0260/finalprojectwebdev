@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 5pc;
+    padding: 4px;
+}
+
+h1{
+    background-color: rgb(57, 33, 78);
+    color: white;
+}
+
+.menu{
+    color: lightcoral;
+}
+
+#about{
+    background-color: rgb(200, 153, 97);
+    border: 2px solid black;
+    border-radius: 5%;
+    box-shadow: inset;
+
+
+}
+
+a:hover{
+    color:lightblue;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 800px;
+    padding:24px;
+}
+
+
