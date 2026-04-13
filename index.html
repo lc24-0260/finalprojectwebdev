@@ -3,24 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Panagiotis Tsimpouris | Portfolio</title>
+    <meta
+        name="description" 
+        content="My personal portfolio, showcasing projects and skills in computer science and cybersecurity."
+    />
     <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
-    <h1>Panagiotis Tsimpouris</h1>
-    <h2>Computer Science, Cybersecurity </h2>
+    <div class="grid-overlay" aria-hidden="true"></div>
 
-    <nav>
-        <ul class="menu">
+    <header class="site-header">
+        <a class="brand" href="#home">PT@kali:~$<span class="brand-cursor">_</span></a>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+<main>
 
-        </ul>
-    </nav>
+    <section id="home" class="hero section shell">
+            <div class="hero-copy panel">
+                <p class="eyebrow">SYSTEM BOOT :: PERSONAL PORTFOLIO</p>
+                <h1>Panagiotis Tsimpouris</h1>
+                <p class="hero-tagline">
+                    Computer Science student building at the intersection of
+                    cybersecurity, software, and curiosity.
+                </p>
+                <p class="typed-line">
+                    <span id="typed-text"></span><span class="cursor">█</span>
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#projects">View Projects</a>
+                    <a class="button ghost" href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </aside>
+    </section>
 
-  <section id="about">
+  <section id="about" class="section shell">
+        <div class="section-heading">
+            <p class="eyebrow">01 :: ABOUT ME</p>
+            <h2>Who I am...</h2>
+        </div>
+        <div class="two-column">
+            <div class="panel">
+                <p>
+                        I am a Computer Science student with a strong interest in
+                        cybersecurity, AI agents, and building projects that
+                        feel useful in the real world. I enjoy solving technical
+                        problems, understanding how systems work, and turning ideas into
+                        clean, functional experiences.
+                </p>
+                <p>
+                        My background includes programming, algorithm analysis, peer
+                        tutoring, and hands-on technical support. I like combining logic
+                        with creativity, whether that means building small tools,
+                        exploring AI ideas, or creating interfaces with a distinct visual
+                        identity.
+                </p>
+                <p>
+                        This portfolio is designed to reflect both sides of how I like to
+                        work: professional and structured, but also personal, curious, and
+                        creative.
+                </p>
+
+            <div class="panel">
+                    <h3>Skills & Tools</h3>
+                    <div class="tag-list">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>GitHub/Git</span>
+                        <span>Kali Linux</span>
+                        <span>Wireshark</span>
+                        <span>Burp Suite</span>
+                        <span>IT Support</span>
+                    </div>
+            </div>
+        </div>
+        </section>
+    
+        <section id="resume" class="section shell">
+            <div class="section-heading">
+                <p class="eyebrow">02 :: TAKE A LOOK AT MY RESUME </p>
+            </div>
+
     <h2>About me:</h2>
         <p>
         Motivated Computer Science student with strong experience in programming, algorithm analysis, and hands-on project development. Skilled in Python and familiar with building practical applications, such as website monitoring tools, Chrome extensions, and algorithmic analysis projects. Experienced in experimental analysis, data visualization, and optimization of sorting and game-related algorithms.</p>
@@ -59,6 +134,6 @@ NCL Fall 2025 Team Game | Top 2.8%</a></h3>
 <footer>
   © 2026 Panagiotis Tsimpouris. All rights reserved.
 </footer>
-
+</main>
 </body>
 </html>
