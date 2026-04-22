@@ -1,40 +1,197 @@
 :root {
-    
+    --bg: #041105;
+    --bg-soft: #08180c;
+    --panel: rgba(7, 28, 12, 0.78);
+    --panel-border: rgba(92, 255, 120, 0.2);
+    --text: #d9ffe3;
+    --muted: #94c9a2;
+    --accent: #63ff7c;
+    --accent-strong: #98ff9f;
+    --shadow: 0 0 24px rgba(99, 255, 124, 0.12);
+    --radius: 18px;
+    --max-width: 1180px;
 }
 
-body{
-    background-color: bisque;
-    font-family: "Helvetica Neue", sans-serif;
-    margin: 5pc;
-    padding: 4px;
+* {
+    box-sizing: border-box;
 }
 
-h1{
-    background-color: rgb(57, 33, 78);
-    color: white;
+html {
+    scroll-behavior: smooth;
 }
 
-.menu{
-    color: lightcoral;
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background:
+    radial-gradient(circle at top, rgba(61, 255, 100, 0.08), transparent 30%),
+    linear-gradient(180deg, #020804 0%, #031108 55%, #010603 100%);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
 }
 
-#about{
-    background-color: rgb(200, 153, 97);
-    border: 2px solid black;
-    border-radius: 5%;
-    box-shadow: inset;
-
-
+body::selection {
+    background: rgba(99, 255, 124, 0.3);
 }
 
-a:hover{
-    color:lightblue;
+.grid-overlay {
+    position: fixed;
+    inset: 0;
+    background-image:
+    linear-gradient(rgba(99, 255, 124, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 255, 124, 0.045) 1px, transparent 1px);
+    background-size: 34px 34px;
+    pointer-events: none;
+    opacity: 0.35;
+    z-index: -1;
 }
 
-.container{
+.shell {
+    width: min(var(--max-width), calc(100% - 2rem));
     margin: 0 auto;
-    max-width: 800px;
-    padding:24px;
 }
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: min(var(--max-width), calc(100% - 2rem));
+    margin: 1rem auto 0;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--panel-border);
+    border-radius: 999px;
+    background: rgba(2, 15, 6, 0.86);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+}
+
+.brand {
+    color: var(--accent-strong);
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.brand-cursor,
+.cursor {
+    animation: blink 1s steps(1) infinite;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a,
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.menu a {
+    font-size: 0.95rem;
+    color: var(--muted);
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.menu a:hover,
+.menu a:focus-visible,
+a:hover,
+a:focus-visible {
+    color: var(--accent-strong);
+    text-shadow: 0 0 12px rgba(99, 255, 124, 0.45);
+}
+
+.section {
+    padding: 5.5rem 0 0;
+}
+
+
+.hero {
+    min-height: calc(100vh - 6rem);
+    display: grid;
+    grid-template-columns: 1.35fr 0.95fr;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--radius);
+    padding: 1.4rem;
+    box-shadow: var(--shadow);
+}
+
+.hero-copy {
+    padding: 2rem;
+}
+
+.hero-photo {
+    width: min(100%, 420px);
+    aspect-ratio: 1;
+    margin-inline: auto;
+    padding: 0.75rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background:
+    radial-gradient(circle at 30% 30%, rgba(99, 255, 124, 0.14), transparent 45%),
+    rgba(3, 18, 7, 0.92);
+}
+
+.hero-photo-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid rgba(99, 255, 124, 0.22);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.34);
+}
+
+.eyebrow {
+    margin: 0 0 0.85rem;
+    color: var(--accent-strong);
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 5vw, 4.75rem);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    margin-bottom: 0.65rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+
 
 
