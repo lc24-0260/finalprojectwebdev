@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panagiotis Tsimpouris | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panagiotis Tsimpouris | Cyber Portfolio</title>
     <meta
-        name="description" 
-        content="My personal portfolio, showcasing projects and skills in computer science and cybersecurity."
+        name="description"
+        content="Personal portfolio of Panagiotis Tsimpouris, a computer science student focused on cybersecurity, software, and creative problem-solving."
     />
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
     <div class="grid-overlay" aria-hidden="true"></div>
 
@@ -18,19 +17,20 @@
         <a class="brand" href="#home">PT@kali:~$<span class="brand-cursor">_</span></a>
         <nav class="nav">
             <ul class="menu">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#about">.about</a></li>
+                <li><a href="#resume">.resume</a></li>
+                <li><a href="#experience">.experience</a></li>
+                <li><a href="#certifications">.certifications</a></li>
+                <li><a href="#projects">.projects</a></li>
+                <li><a href="#blog">.blog</a></li>
+                <li><a href="#contact">.contact</a></li>
             </ul>
+
         </nav>
     </header>
 
-<main>
-
-    <section id="home" class="hero section shell">
+    <main>
+        <section id="home" class="hero section shell">
             <div class="hero-copy panel">
                 <p class="eyebrow">SYSTEM BOOT :: PERSONAL PORTFOLIO</p>
                 <h1>Panagiotis Tsimpouris</h1>
@@ -46,84 +46,100 @@
                     <a class="button ghost" href="#contact">Contact Me</a>
                 </div>
             </div>
-        </aside>
-    </section>
 
-  <section id="about" class="section shell">
-        <div class="section-heading">
-            <p class="eyebrow">01 :: ABOUT ME</p>
-            <h2>Who I am...</h2>
-        </div>
-        <div class="two-column">
-            <div class="panel">
-                <p>
+            <aside class="hero-photo panel" aria-label="Profile photo">
+                <img
+                    src="pfp.jpg"
+                    alt="Portrait of Panagiotis Tsimpouris"
+                    class="hero-photo-image"
+                />
+            </aside>
+        </section>
+
+        <section id="about" class="section shell">
+            <div class="section-heading">
+                <p class="eyebrow">01 :: ABOUT</p>
+                <h2>Who I am</h2>
+            </div>
+            <div class="two-column">
+                <div class="panel">
+                    <p>
                         I am a Computer Science student with a strong interest in
-                        cybersecurity, AI agents, and building projects that
+                        cybersecurity, software engineering, and building projects that
                         feel useful in the real world. I enjoy solving technical
                         problems, understanding how systems work, and turning ideas into
                         clean, functional experiences.
-                </p>
-                <p>
+                    </p>
+                    <p>
                         My background includes programming, algorithm analysis, peer
                         tutoring, and hands-on technical support. I like combining logic
                         with creativity, whether that means building small tools,
                         exploring AI ideas, or creating interfaces with a distinct visual
                         identity.
-                </p>
-                <p>
+                    </p>
+                    <p>
                         This portfolio is designed to reflect both sides of how I like to
                         work: professional and structured, but also personal, curious, and
                         creative.
-                </p>
+                    </p>
+                </div>
 
-            <div class="panel">
+                <div class="panel">
                     <h3>Skills & Tools</h3>
                     <div class="tag-list">
                         <span>Python</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
                         <span>JavaScript</span>
-                        <span>GitHub/Git</span>
-                        <span>Kali Linux</span>
+                        <span>Node.js</span>
+                        <span>GitHub</span>
+                        <span>Linux</span>
                         <span>Wireshark</span>
                         <span>Burp Suite</span>
+                        <span>Ghidra</span>
+                        <span>Problem Solving</span>
                         <span>IT Support</span>
                     </div>
+                </div>
             </div>
-        </div>
         </section>
-    
+
         <section id="resume" class="section shell">
             <div class="section-heading">
-                <p class="eyebrow">02 :: TAKE A LOOK AT MY RESUME </p>
-                <h2>Quick Overview</h2>
+                <p class="eyebrow">02 :: RESUME SNAPSHOT</p>
+                <h2>Quick professional overview</h2>
             </div>
-            <div class = "panel resume-grid">
-                <div>
+            <p class="resume-download">
+                Download my resume
+                <a href="Panagiotis_Resume.pdf" download>here</a>.
+            </p>
+            <div class="resume-grid">
+                <article class="panel resume-card">
                     <h3>Education</h3>
                     <p><strong>Lewis &amp; Clark College</strong></p>
                     <p>B.A. in Computer Science, minor in Cybersecurity</p>
-                    <p>Expected graduation: 2028</p>   
-                    <p>Cumulative GPA: 3.948</p>
-                </div>
-                <div>
+                    <p>Expected graduation: 2028</p>
+                </article>
+                <article class="panel resume-card">
                     <h3>Strengths</h3>
                     <ul class="clean-list">
                         <li>Cybersecurity competitions and analysis</li>
-                        <li>Planning, executing, and debugging</li>
+                        <li>Programming and debugging</li>
                         <li>Peer tutoring and technical communication</li>
                         <li>Hands-on IT troubleshooting</li>
                     </ul>
-                </div>
-                <div>
+                </article>
+                <article class="panel resume-card">
                     <h3>Current Goal</h3>
                     <p>
                         Grow as a cybersecurity-minded developer while building a strong,
-                        creative, and practical technical portfolio. 
+                        creative, and practical technical portfolio.
                     </p>
-                </div>
+                </article>
             </div>
-         </section>
+        </section>
 
-         <section id="experience" class="section shell">
+        <section id="experience" class="section shell">
             <div class="section-heading">
                 <p class="eyebrow">03 :: EXPERIENCE</p>
                 <h2>What I am doing</h2>
@@ -133,7 +149,7 @@
                     <h3>Peer-to-Peer Tutor</h3>
                     <p class="meta">Lewis &amp; Clark College</p>
                     <p>
-                        Support students in computer science topics,
+                        Support students in foundational computer science topics,
                         including programming logic, debugging, and problem solving.
                     </p>
                 </article>
@@ -148,7 +164,6 @@
                 </article>
             </div>
         </section>
-
 
         <section id="certifications" class="section shell">
             <div class="section-heading">
@@ -166,61 +181,119 @@
                 </article>
 
                 <article class="panel info-card">
-                    <h3>CompTIA Security+</h3>
-                    <p class="meta">In progress</p>
-                    <p>
-                        Currently studying core security concepts including identity,
-                        controls, risk, defense strategies, and practical security
-                        operations.
-                    </p>
-                </article>
-
-                <article class="panel info-card">
-                    <h3>CompTIA Security+</h3>
-                    <p class="meta">In progress</p>
-                    <p>
-                        Currently studying core security concepts including identity,
-                        controls, risk, defense strategies, and practical security
-                        operations.
-                    </p>
-                </article>
-
-                <article class="panel info-card">
                     <h3>Dean's List Honors</h3>
                     <p class="meta">Issued by Dean Bruce Suttmeier</p>
                     <p>
-                        Earned placement on the Lewis & Clark College Dean’s List for 
-                        outstanding academic achievement, with a 3.948 GPA. The distinction 
-                        honors full-time students who earn a 3.70 GPA or higher in 12 or more 
+                        Earned placement on the Lewis & Clark College Dean’s List for
+                        outstanding academic achievement, with a 3.948 GPA. The distinction
+                        honors full-time students who earn a 3.70 GPA or higher in 12 or more
                         graded credits.
                     </p>
                 </article>
-                
             </div>
         </section>
 
-        
-  <section id="#projects">
-    <h2>A look at my projects:</h2>
-    <h3><a href="https://github.com/Tsimpolos/othellogame">Othello AI Game</a></h3>
-    <p>An interactive Reversi/Othello board game that pairs a minimax-based AI opponent with a modern Pygame interface. The project lets you play as black, choose an AI difficulty, and enjoy a polished experience inspired by eothello.com.</p>
-    <h3><a href="https://github.com/Tsimpolos/tictactoeaiagent">Tic-Tac-Toe AI Player</a></h3>
-    <p>This project is an interactive game that integrates Machine Learning and Artificial Intelligence techniques to create an intelligent, adaptive agent. The agent learns strategies to perform well in the game environment, making gameplay dynamic and engaging. The codebase was developed as the final assignment for my Machine Learning & AI class.</p>
-    <h3><a href="https://cyberskyline.com/verify/HC9U22GHTPNB"> 
-NCL Fall 2025 Team Game | Top 2.8%</a></h3>
-    <p>This report shows how I performed in the NCL Fall 2025 Team Game. It highlights my national ranking, percentile, and scores across all categories like cryptography, password cracking, OSINT, forensics, scanning, and more. It gives a clear overview of what I completed, how accurate I was, and which skills I demonstrated throughout the competition.</p>
-   </section>
+        <section id="projects" class="section shell">
+            <div class="section-heading">
+                <p class="eyebrow">05 :: PROJECTS</p>
+                <h2>Selected work</h2>
+                <p>
+                    These cards are loaded dynamically from a JSON file, which gives the
+                    site a simple data-driven feature.
+                </p>
+            </div>
 
-  <section id="#contact">
-    <h2>How to contact me:</h2>
-    <h3><a href="mailto:panostsi05@gmail.com">Send Email</a></h3>
-    <h3><a href="https://www.linkedin.com/in/panagiotis-tsimpouris/">My LinkedIn</a></h3>
+            <div class="filter-bar" role="toolbar" aria-label="Project filters">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="security">Security</button>
+                <button class="filter-button" data-filter="ai">AI</button>
+                <button class="filter-button" data-filter="web">Web</button>
+            </div>
 
-  </section>
+            <div id="project-grid" class="cards project-grid"></div>
+        </section>
 
-<footer>
-  © 2026 Panagiotis Tsimpouris. All rights reserved.
-</footer>
-</main>
+        <section id="blog" class="section shell">
+            <div class="section-heading">
+                <p class="eyebrow">06 :: BLOG</p>
+                <h2>Ideas and writeups</h2>
+            </div>
+            <div class="cards three-up">
+                <article class="panel blog-card">
+                    <h3>What cybersecurity competitions taught me</h3>
+                    <p>
+                        A future post about pressure, teamwork, fast learning, and how
+                        competitions sharpen technical instincts.
+                    </p>
+                </article>
+                <article class="panel blog-card">
+                    <h3>Why I like building small useful tools</h3>
+                    <p>
+                        A look into the satisfaction of making projects that solve simple
+                        but real problems.
+                    </p>
+                </article>
+                <article class="panel blog-card">
+                    <h3>Learning through teaching</h3>
+                    <p>
+                        Reflections on tutoring computer science and how explaining a
+                        concept deepens understanding.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section shell">
+            <div class="section-heading">
+                <p class="eyebrow">07 :: CONTACT</p>
+                <h2>Let’s connect</h2>
+                <p>
+                    Use the form below or reach out through email, LinkedIn, or GitHub.
+                </p>
+            </div>
+
+            <div class="two-column contact-layout">
+                <div class="panel contact-links">
+                    <h3>Links</h3>
+                    <ul class="clean-list">
+                        <li>
+                            <a href="mailto:panostsi05@gmail.com">panostsi05@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/panagiotis-tsimpouris/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Tsimpolos" target="_blank" rel="noreferrer">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form id="contact-form" class="panel contact-form" novalidate>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" />
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" />
+
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell me what you want to build or talk about."
+                    ></textarea>
+
+                    <button type="submit" class="button primary">Send Message</button>
+                    <p id="form-message" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer shell">
+        <p>© 2026 Panagiotis Tsimpouris. Built with HTML, CSS, JavaScript, and a little terminal energy.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
