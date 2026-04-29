@@ -339,8 +339,8 @@ function setupHyperboloidAnimation() {
         upperPoints.length = 0;
 
         const centerX = width / 2;
-        const topY = height * 0.24;
-        const bottomY = height * 0.76;
+        const topY = height * 0.14;
+        const bottomY = height * 0.86;
         const radiusX = width * 0.32;
         const radiusY = height * 0.085;
         geometry = { centerX, topY, bottomY, radiusX, radiusY };
@@ -534,8 +534,32 @@ if (contactForm) {
     contactForm.addEventListener("submit", handleContactSubmit);
 }
 
+async function loadBlog() {
+    const blogGrid = document.getElementById("blog-grid");
+    if (!blogGrid) return;
+
+    try {
+        const response = await fetch("data/blog.json");
+        if (!response.ok) throw new Error("Could not load blog data.");
+
+        const posts = await response.json();
+        blogGrid.innerHTML = posts.map((post) => `
+            <article class="panel blog-card">
+                <div class="meta">${post.tag} &mdash; ${new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</div>
+                <h3>${post.title}</h3>
+                <p>${post.summary}</p>
+                <a class="button ghost" href="${post.link}">Read more</a>
+            </article>
+        `).join("");
+    } catch (error) {
+        const blogGrid = document.getElementById("blog-grid");
+        if (blogGrid) blogGrid.innerHTML = `<article class="panel blog-card"><h3>Blog unavailable</h3><p>${error.message}</p></article>`;
+    }
+}
+
 setupThemeToggle();
 setupLoaderBypassLinks();
 runBootLoader();
 loadProjects();
+loadBlog();
 setupHyperboloidAnimation();
