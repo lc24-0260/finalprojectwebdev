@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Hyperboloid Renderer",
+    "description": "A graphics program originally written in C for CS1, recreated in JavaScript using the HTML5 Canvas API to animate a rotating 3D hyperboloid with glowing line art.",
+    "category": "web",
+    "visual": "<span style='font-size:2.2rem;'>⬡</span>",
+    "technologies": ["C", "JavaScript", "Canvas API", "CSS"],
+    "link": "#"
+  },
+  {
+    "title": "Network Packet Analyzer",
+    "description": "A command-line tool that captures and inspects live network traffic, parsing TCP/IP headers and flagging suspicious patterns for educational security analysis.",
+    "category": "security",
+    "visual": "<span style='font-size:2.2rem;'>🔬</span>",
+    "technologies": ["Python", "Scapy", "Linux"],
+    "link": "#"
+  },
+  {
+    "title": "AI Text Classifier",
+    "description": "A machine learning pipeline that fine-tunes a pre-trained language model to classify text into categories with a simple web interface for live inference.",
+    "category": "ai",
+    "visual": "<span style='font-size:2.2rem;'>🤖</span>",
+    "technologies": ["Python", "PyTorch", "Transformers", "Flask"],
+    "link": "#"
+  },
+  {
+    "title": "Portfolio Site",
+    "description": "This portfolio — a hand-coded static site with a matrix boot loader, animated hyperboloid, dynamic JSON-driven project cards, and a dark terminal aesthetic.",
+    "category": "web",
+    "visual": "<span style='font-size:2.2rem;'>💻</span>",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "link": "#"
+  },
+  {
+    "title": "CTF Challenge Writeups",
+    "description": "A collection of write-ups from Capture the Flag competitions covering web exploitation, reverse engineering, and cryptography challenges.",
+    "category": "security",
+    "visual": "<span style='font-size:2.2rem;'>🚩</span>",
+    "technologies": ["Python", "Bash", "Ghidra", "Burp Suite"],
+    "link": "#"
+  },
+  {
+    "title": "Sentiment Dashboard",
+    "description": "A real-time dashboard that pulls tweets via the Twitter API, runs sentiment analysis, and visualises trends with interactive charts.",
+    "category": "ai",
+    "visual": "<span style='font-size:2.2rem;'>📊</span>",
+    "technologies": ["Python", "NLTK", "React", "Chart.js"],
+    "link": "#"
+  }
+]

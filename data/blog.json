@@ -1,0 +1,23 @@
+[
+  {
+    "title": "From C to JavaScript: Porting a Graphics Program",
+    "date": "2024-11-10",
+    "tag": "Dev",
+    "summary": "How I took my CS1 hyperboloid renderer written in C and rebuilt it in vanilla JavaScript using the Canvas API — and what I learned about the differences between the two.",
+    "link": "#"
+  },
+  {
+    "title": "My First CTF: What I Got Wrong",
+    "date": "2025-01-22",
+    "tag": "Security",
+    "summary": "A honest look at my first Capture the Flag competition — the mistakes I made, the rabbit holes I fell into, and the one challenge I actually solved.",
+    "link": "#"
+  },
+  {
+    "title": "Building a Portfolio That Doesn't Look Like Every Other Portfolio",
+    "date": "2025-03-05",
+    "tag": "Design",
+    "summary": "Why I chose a terminal aesthetic, how I built the matrix boot loader, and the small details that make a personal site feel personal.",
+    "link": "#"
+  }
+]
