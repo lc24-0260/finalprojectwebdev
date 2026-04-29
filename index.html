@@ -62,44 +62,70 @@
                 <h2>Who I am</h2>
             </div>
             <div class="two-column">
-                <div class="panel">
+                <div class="panel about-copy">
                     <p>
-                        I am a Computer Science student with a strong interest in
-                        cybersecurity, software engineering, and building projects that
-                        feel useful in the real world. I enjoy solving technical
-                        problems, understanding how systems work, and turning ideas into
-                        clean, functional experiences.
+                        I am a Computer Science student at Lewis &amp; Clark College with a
+                        strong interest in cybersecurity, software engineering, and building
+                        projects that feel useful outside the classroom. I was born in
+                        Kalamata, Greece, and my path has been shaped by curiosity,
+                        independence, and the chance to study in different environments.
                     </p>
                     <p>
-                        My background includes programming, algorithm analysis, peer
-                        tutoring, and hands-on technical support. I like combining logic
-                        with creativity, whether that means building small tools,
-                        exploring AI ideas, or creating interfaces with a distinct visual
-                        identity.
+                        At 16, I left Greece to attend UWC Mostar in Bosnia and Herzegovina
+                        on a full scholarship, an experience that pushed me to grow up
+                        quickly, meet people from all over the world, and think about
+                        problems from many different perspectives. That experience still
+                        influences how I work today: I like being open-minded, adaptable, and
+                        willing to figure things out even when they feel unfamiliar.
                     </p>
                     <p>
-                        This portfolio is designed to reflect both sides of how I like to
-                        work: professional and structured, but also personal, curious, and
-                        creative.
+                        A lot of my technical experience comes from hands-on work. I have
+                        worked with programming, algorithm analysis, peer tutoring, technical
+                        support, and cybersecurity challenges. As a peer tutor, I enjoy
+                        helping other students understand difficult concepts because
+                        explaining something clearly means you truly understand it yourself.
+                    </p>
+                    <p>
+                        I like combining logic with creativity. Sometimes that means building
+                        a small tool, experimenting with AI ideas, designing a modern
+                        interface, or giving a project a visual identity that feels unique.
+                        This portfolio reflects both sides of how I like to work:
+                        professional and structured, but also curious, personal, and creative.
                     </p>
                 </div>
 
-                <div class="panel">
-                    <h3>Skills & Tools</h3>
-                    <div class="tag-list">
-                        <span>Python</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Node.js</span>
-                        <span>GitHub</span>
-                        <span>Linux</span>
-                        <span>Wireshark</span>
-                        <span>Burp Suite</span>
-                        <span>Ghidra</span>
-                        <span>Problem Solving</span>
-                        <span>IT Support</span>
+                <aside class="panel hyperboloid-panel">
+                    <div class="hyperboloid-frame">
+                        <canvas
+                            id="hyperboloid-canvas"
+                            class="hyperboloid-canvas"
+                            width="420"
+                            height="420"
+                            aria-label="Animated hyperboloid line drawing"
+                        ></canvas>
                     </div>
+                    <p class="hyperboloid-note">
+                        Note: This is a recreation of a Computer Science I graphics
+                        program I built in C.
+                    </p>
+                </aside>
+            </div>
+
+            <div class="panel skills-panel">
+                <h3>Skills & Tools</h3>
+                <div class="tag-list">
+                    <span>Python</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                    <span>GitHub</span>
+                    <span>Linux</span>
+                    <span>Wireshark</span>
+                    <span>Burp Suite</span>
+                    <span>Ghidra</span>
+                    <span>Problem Solving</span>
+                    <span>IT Support</span>
                 </div>
             </div>
         </section>
@@ -107,7 +133,7 @@
         <section id="resume" class="section shell">
             <div class="section-heading">
                 <p class="eyebrow">02 :: RESUME SNAPSHOT</p>
-                <h2>Quick professional overview</h2>
+                <h2>Quick Overview</h2>
             </div>
             <p class="resume-download">
                 Download my resume
@@ -116,9 +142,10 @@
             <div class="resume-grid">
                 <article class="panel resume-card">
                     <h3>Education</h3>
-                    <p><strong>Lewis &amp; Clark College</strong></p>
-                    <p>B.A. in Computer Science, minor in Cybersecurity</p>
-                    <p>Expected graduation: 2028</p>
+                    <p class="resume-school"><strong>Lewis &amp; Clark College</strong></p>
+                    <p>B.A. in Computer Science</p>
+                    <p>Minor in Cybersecurity and Data Science</p>
+                    <p class="resume-detail">Expected graduation: 2028</p>
                 </article>
                 <article class="panel resume-card">
                     <h3>Strengths</h3>
@@ -132,8 +159,11 @@
                 <article class="panel resume-card">
                     <h3>Current Goal</h3>
                     <p>
-                        Grow as a cybersecurity-minded developer while building a strong,
-                        creative, and practical technical portfolio.
+                        Summer internship in the Rogers Program focused on
+                        <strong>
+                            "Exploring AI and Human-in-the-Loop for Hands-on Exercises
+                            and Hint Generation in Cybersecurity"
+                        </strong>.
                     </p>
                 </article>
             </div>
@@ -142,7 +172,7 @@
         <section id="experience" class="section shell">
             <div class="section-heading">
                 <p class="eyebrow">03 :: EXPERIENCE</p>
-                <h2>What I am doing</h2>
+                <h2>What am I doing</h2>
             </div>
             <div class="cards two-up">
                 <article class="panel info-card">
@@ -168,15 +198,32 @@
         <section id="certifications" class="section shell">
             <div class="section-heading">
                 <p class="eyebrow">04 :: CREDENTIALS</p>
-                <h2>Certifications & achievements</h2>
+                <h2>Certifications & Achievements</h2>
             </div>
             <div class="cards two-up">
                 <article class="panel info-card">
                     <h3>NCL Fall 2025 Team Game</h3>
                     <p class="meta">Cyber Skyline</p>
                     <p>
-                        National Cyber League team competition result ranked in the top
-                        tier nationally, demonstrating hands-on cybersecurity skills.
+                        My team of classmates and I finished in the top 2.8% nationally
+                        in the NCL Fall 2025 Team Game, demonstrating strong hands-on
+                        cybersecurity performance across multiple challenge categories.
+                    </p>
+                    <p>
+                        This report shows how I performed in the NCL Fall 2025 Team Game.
+                        It highlights my national ranking, percentile, and scores across
+                        areas like cryptography, password cracking, OSINT, forensics,
+                        scanning, and more. It gives a clear overview of what I completed,
+                        how accurate I was, and which skills I demonstrated throughout the
+                        competition.
+                    </p>
+                    <p class="credential-link-row">
+                        <a
+                            class="button ghost"
+                            href="https://cyberskyline.com/verify/HC9U22GHTPNB"
+                            target="_blank"
+                            rel="noreferrer"
+                        >View certificate</a>
                     </p>
                 </article>
 
@@ -184,10 +231,22 @@
                     <h3>Dean's List Honors</h3>
                     <p class="meta">Issued by Dean Bruce Suttmeier</p>
                     <p>
-                        Earned placement on the Lewis & Clark College Dean’s List for
-                        outstanding academic achievement, with a 3.948 GPA. The distinction
-                        honors full-time students who earn a 3.70 GPA or higher in 12 or more
+                        Earned placement on the Lewis & Clark College Dean’s List for 
+                        outstanding academic achievement, with a 3.948 GPA. The distinction 
+                        honors full-time students who earn a 3.70 GPA or higher in 12 or more 
                         graded credits.
+                    </p>
+                    <p>
+                        You can view the published Dean's List, where my name appears in
+                        the list.
+                    </p>
+                    <p class="credential-link-row">
+                        <a
+                            class="button ghost"
+                            href="https://college.lclark.edu/live/files/37753-fa25-deans-list"
+                            target="_blank"
+                            rel="noreferrer"
+                        >View Dean's List</a>
                     </p>
                 </article>
             </div>
@@ -196,7 +255,7 @@
         <section id="projects" class="section shell">
             <div class="section-heading">
                 <p class="eyebrow">05 :: PROJECTS</p>
-                <h2>Selected work</h2>
+                <h2>Selected Work</h2>
                 <p>
                     These cards are loaded dynamically from a JSON file, which gives the
                     site a simple data-driven feature.
@@ -218,29 +277,7 @@
                 <p class="eyebrow">06 :: BLOG</p>
                 <h2>Ideas and writeups</h2>
             </div>
-            <div class="cards three-up">
-                <article class="panel blog-card">
-                    <h3>What cybersecurity competitions taught me</h3>
-                    <p>
-                        A future post about pressure, teamwork, fast learning, and how
-                        competitions sharpen technical instincts.
-                    </p>
-                </article>
-                <article class="panel blog-card">
-                    <h3>Why I like building small useful tools</h3>
-                    <p>
-                        A look into the satisfaction of making projects that solve simple
-                        but real problems.
-                    </p>
-                </article>
-                <article class="panel blog-card">
-                    <h3>Learning through teaching</h3>
-                    <p>
-                        Reflections on tutoring computer science and how explaining a
-                        concept deepens understanding.
-                    </p>
-                </article>
-            </div>
+            <div id="blog-grid" class="cards three-up"></div>
         </section>
 
         <section id="contact" class="section shell">
