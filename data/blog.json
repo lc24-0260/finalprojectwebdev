@@ -1,23 +1,26 @@
 [
-  {
-    "title": "From C to JavaScript: Porting a Graphics Program",
-    "date": "2024-11-10",
-    "tag": "Dev",
-    "summary": "How I took my CS1 hyperboloid renderer written in C and rebuilt it in vanilla JavaScript using the Canvas API — and what I learned about the differences between the two.",
-    "link": "#"
-  },
-  {
-    "title": "My First CTF: What I Got Wrong",
-    "date": "2025-01-22",
-    "tag": "Security",
-    "summary": "A honest look at my first Capture the Flag competition — the mistakes I made, the rabbit holes I fell into, and the one challenge I actually solved.",
-    "link": "#"
-  },
-  {
-    "title": "Building a Portfolio That Doesn't Look Like Every Other Portfolio",
-    "date": "2025-03-05",
-    "tag": "Design",
-    "summary": "Why I chose a terminal aesthetic, how I built the matrix boot loader, and the small details that make a personal site feel personal.",
-    "link": "#"
-  }
+    {
+        "title": "What cybersecurity competitions taught me",
+        "category": "Competition",
+        "excerpt": "Pressure, teamwork, and fast learning changed how I approach technical problem solving.",
+        "path": "blog/cybersecurity-competitions.html"
+    },
+    {
+        "title": "Why I like building small useful tools",
+        "category": "Projects",
+        "excerpt": "Small tools force clear thinking and often end up being the most practical things I build.",
+        "path": "blog/small-useful-tools.html"
+    },
+    {
+        "title": "Learning through teaching",
+        "category": "Teaching",
+        "excerpt": "Tutoring has shown me that explaining an idea clearly is one of the best tests of understanding.",
+        "path": "blog/learning-through-teaching.html"
+    },
+    {
+        "title": "Sample blog format",
+        "category": "Example",
+        "excerpt": "A placeholder example that shows the exact structure to follow when adding future blog posts.",
+        "path": "blog/sample-blog-format.html"
+    }
 ]
