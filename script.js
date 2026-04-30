@@ -473,7 +473,7 @@ function renderProjects(projects, filter) {
         .map(
             (project) => `
                 <article class="panel project-card">
-                    <div class="project-visual">${project.visual}</div>
+                    <div class="project-visual"><code>${project.visual}</code></div>
                     <div>
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
@@ -506,7 +506,7 @@ function isValidEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-function handleContactSubmit(event) {
+async function handleContactSubmit(event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -525,9 +525,26 @@ function handleContactSubmit(event) {
         return;
     }
 
-    formMessage.textContent = "Message validated successfully. Backend hookup can be added next.";
-    formMessage.classList.remove("error-message");
-    contactForm.reset();
+    try {
+        const response = await fetch("http://localhost:3000/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, email, message })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(data.error || "Submission failed.");
+        }
+
+        formMessage.textContent = "Message sent! I'll get back to you soon.";
+        formMessage.classList.remove("error-message");
+        contactForm.reset();
+    } catch (error) {
+        formMessage.textContent = error.message;
+        formMessage.classList.add("error-message");
+    }
 }
 
 if (contactForm) {
@@ -545,10 +562,10 @@ async function loadBlog() {
         const posts = await response.json();
         blogGrid.innerHTML = posts.map((post) => `
             <article class="panel blog-card">
-                <div class="meta">${post.tag} &mdash; ${new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</div>
+                <div class="meta">${post.category}</div>
                 <h3>${post.title}</h3>
-                <p>${post.summary}</p>
-                <a class="button ghost" href="${post.link}">Read more</a>
+                <p>${post.excerpt}</p>
+                <a class="button ghost" href="${post.path}">Read more</a>
             </article>
         `).join("");
     } catch (error) {

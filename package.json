@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-panagiotistsimpouris",
+  "version": "1.0.0",
+  "description": "Portfolio with Node.js + SQLite contact backend",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.3"
+  }
+}
