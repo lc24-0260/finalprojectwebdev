@@ -219,7 +219,10 @@ function renderProjects(projects, filter) {
         .map(
             (project) => `
                 <article class="panel project-card">
-                    <div class="project-visual"><code>${project.visual}</code></div>
+                    <div class="project-visual">
+                        <span class="project-icon" aria-hidden="true">${project.icon}</span>
+                        <code class="project-filename">${project.visual}</code>
+                    </div>
                     <div>
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
@@ -272,7 +275,7 @@ async function handleContactSubmit(event) {
     }
 
     try {
-        const response = await fetch("http://localhost:3000/contact", {
+        const response = await fetch("/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, message })

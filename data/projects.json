@@ -5,7 +5,8 @@
         "technologies": ["Python", "Pygame", "AI", "Game Logic"],
         "category": "ai",
         "link": "https://github.com/Tsimpolos/othellogame",
-        "visual": "othello_ai.exe"
+        "visual": "othello_ai.exe",
+        "icon": "♟"
     },
     {
         "title": "Tic-Tac-Toe AI Player",
@@ -13,7 +14,8 @@
         "technologies": ["Python", "Machine Learning", "AI", "Algorithms"],
         "category": "ai",
         "link": "https://github.com/Tsimpolos/tictactoeaiagent",
-        "visual": "tictactoe_agent.py"
+        "visual": "tictactoe_agent.py",
+        "icon": "✕○"
     },
     {
         "title": "Portfolio Website",
@@ -21,6 +23,7 @@
         "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
         "category": "web",
         "link": "#home",
-        "visual": "portfolio_site.html"
+        "visual": "portfolio_site.html",
+        "icon": "⟨/⟩"
     }
 ]
